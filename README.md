@@ -43,10 +43,6 @@ To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino
   [Teensy 4.1](https://www.pjrc.com/store/teensy41.html)|ARM® Cortex-M7|
   Linux Native|x86/ARM/etc.|Raspberry Pi
 
-## Contributors
-
-Marlin is constantly improving thanks to a huge number of contributors from all over the world bringing their specialties and talents. Huge thanks are due to [all the contributors](https://github.com/MarlinFirmware/Marlin/graphs/contributors) who regularly patch up bugs, help direct traffic, and basically keep Marlin from falling apart. Marlin's continued existence would not be possible without them.
-
 ## Administration
 
 Regular users can open and close their own issues, but only the administrators can do project-related things like add labels, merge changes, set milestones, and kick trolls. The current Marlin admin team consists of:
