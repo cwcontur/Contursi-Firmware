@@ -43,8 +43,7 @@ To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino
   Linux Native|x86/ARM/etc.|Raspberry Pi
 
 ## Administration
-
-Regular users can open and close their own issues, but only the administrators can do project-related things like add labels, merge changes, set milestones, and kick trolls. The current Marlin admin team consists of:
+The current Marlin admin team consists of:
 
  - Scott Lahteine [[@thinkyhead](https://github.com/thinkyhead)] - USA 
  - Roxanne Neufeld [[@Roxy-3D](https://github.com/Roxy-3D)] - USA
