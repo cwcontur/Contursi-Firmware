@@ -102,7 +102,7 @@ sudo reboot
 
 [^2]: [Pi Fast Boot](https://singleboardbytes.com/637/how-to-fast-boot-raspberry-pi.htm) 
 
-## GitHb SSH [^3]
+## GitHub SSH [^3]
 ```
 ssh-keygen -t ed25519 -C "cwcontur@uncg.edu"
 ```
