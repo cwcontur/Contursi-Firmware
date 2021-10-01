@@ -192,6 +192,30 @@ bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/main/scripts/inst
 
 [^5]: [OctoDash](https://github.com/UnchartedBull/OctoDash) 
 
+## OctoPrint Plugins
+- ABL Expert Plugin
+- Arc-Welder
+- BLTouch Plugin
+- Consolidate Temp Control
+- Consolidated Tabs
+- DisplayLayerProgress
+- Enclosure Plugin
+- Filament Manager
+- Firmware Check
+- GPIO Control
+- OctoDash Companion
+- OctoRelay
+- Octolapse
+- Plotly Temp Graph
+- Preheat Button
+- PrintTimeGenius Plugin
+- Printer Dialogs
+- Printer Notifications
+- Slicer Thumbnails
+- Spool Manager
+- Tab Order
+- Themeify
+- Virtual Printer
 
 # Marlin 3D Printer Firmware
 
