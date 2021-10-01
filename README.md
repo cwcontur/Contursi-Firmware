@@ -60,7 +60,7 @@ Marlin is published under the [GPL license](/LICENSE) because we believe in open
 
 # Pi Firmware Setup
 #### Raspberry Pi 4 Firmware + 1 Wire Temp Sensor Modules + Touchscreen UI
-
+![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
 ## Pi Settings
 `$ sudo raspi-config` 
 - Hostname -> Printer
