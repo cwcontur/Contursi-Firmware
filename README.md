@@ -17,7 +17,7 @@ sudo raspi-config
 sudo reboot
 ```
 
-## Updates + NPM[^1]
+## Updates + NPM [^1]
 ```
 sudo apt-get update
 ```
@@ -160,7 +160,7 @@ Examples
   $ ds18b20 --list
 ```
 
-#### MCP9808[^7][^8]
+#### MCP9808 [^7] [^8]
 
 ```
 sudo apt-get install build-essential python-dev python-pip python-smbus git
