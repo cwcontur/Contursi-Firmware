@@ -199,7 +199,7 @@ bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/main/scripts/inst
 - Consolidate Temp Control
 - Consolidated Tabs
 - DisplayLayerProgress
-- Enclosure Plugin
+- Enclosure Plugin [^10]
 - Filament Manager
 - Firmware Check
 - GPIO Control
@@ -216,6 +216,8 @@ bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/main/scripts/inst
 - Tab Order
 - Themeify
 - Virtual Printer
+
+[^10]: [Enclosure Plugin w/ Custom Graph](https://github.com/Dak0r/OctoPrint-Enclosure-with-Custom-Graphs)
 
 # Marlin 3D Printer Firmware
 
