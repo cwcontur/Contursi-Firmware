@@ -37,14 +37,14 @@ sudo shutdown - r now
 ```
 sudo nano /boot/config.txt
 ```
-- disable_splash=1
-- dtoverlay=disable-bt
-- boot_delay=0
+- `disable_splash=1`
+- `dtoverlay=disable-bt`
+- `boot_delay=0`
 
 ***Cooling Fan Needed for Overclocking!***
-- over_voltage=6
-- arm_freq=2147
-- gpu_freq=750 
+- `over_voltage=6`
+- `arm_freq=2147`
+- `gpu_freq=750`
 
 ```
 sudo reboot
@@ -60,7 +60,7 @@ sudo nano /boot/cmdline.txt
 systemd-analyze blame
 ```
 
-**[These may not work!]**
+###**[These may not work!]**
 
 ```
 sudo systemctl disable dhcpcd.service
@@ -102,7 +102,7 @@ sudo reboot
 
 [^2]: [Pi Fast Boot](https://singleboardbytes.com/637/how-to-fast-boot-raspberry-pi.htm) 
 
-## Github SSH [^3]
+## GitHb SSH [^3]
 ```
 ssh-keygen -t ed25519 -C "cwcontur@uncg.edu"
 ```
@@ -117,7 +117,7 @@ cat ~/.ssh/id_ed25519.pub
 ```
 - Then select and copy the contents of the id_ed25519.pub file
 displayed in the terminal to your clipboard
-- Go here to add key -> https://github.com/settings/keys
+- Go here to add key -> [SSH Keys](https://github.com/settings/keys)
 
 [^3]: [Github SSH Setup](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 
 
