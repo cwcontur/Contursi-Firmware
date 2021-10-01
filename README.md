@@ -70,6 +70,10 @@ displayed in the terminal to your clipboard
 [^3]: [Github SSH Setup](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 
 
 ## Temp Sensor [^4]
+#### ***DS18B20 Sensor Being Replaced With MCP9808[^6]***
+
+[^6]: [MCP9808](https://github.com/fivdi/mcp9808-temperature-sensor)
+
 `$ git clone git@github.com:thisdavej/ds18b20-raspi.git`\
 `$ npm install -g ds18b20-raspi`
 ```
