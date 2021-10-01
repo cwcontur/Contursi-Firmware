@@ -2,7 +2,9 @@
 #### Raspberry Pi 4 Firmware + 1 Wire Temp Sensor Modules + Touchscreen UI
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
 ## Pi Settings
-`$ sudo raspi-config` 
+```
+sudo raspi-config
+```
 - Hostname -> Printer
 - Password -> ******
 - Wireless Connection
@@ -11,18 +13,30 @@
 - SSH -> Enable
 - Camera -> Enable
 
-`$ sudo reboot`
+```
+sudo reboot
+```
 
-## Updates + NPM
-`$ sudo apt-get update`\
-`$ sudo apt full-upgrade`\
-`$ sudo apt-get install nodejs npm ` [^1]\
-`$ sudo shutdown - r now`
+## Updates + NPM[^1]
+```
+sudo apt-get update
+```
+```
+sudo apt full-upgrade
+```
+```
+sudo apt-get install nodejs npm
+``` 
+```
+sudo shutdown - r now
+```
 
 [^1]:[NPM](https://www.npmjs.com/package/raspberry).
 
 ## Faster Boot [^2]
-`$ sudo nano /boot/config.txt`
+```
+sudo nano /boot/config.txt
+```
 - disable_splash=1
 - dtoverlay=disable-bt
 - boot_delay=0
@@ -32,37 +46,75 @@
 - arm_freq=2147
 - gpu_freq=750 
 
-`$ sudo reboot`
+```
+sudo reboot
+```
 
-`$ sudo nano /boot/cmdline.txt`
+```
+sudo nano /boot/cmdline.txt
+```
 - Delete 'splash' parameter
 - Add 'quiet' parameter
 
-`$ systemd-analyze blame`
+```
+systemd-analyze blame
+```
 
 **[These may not work!]**
 
-`$ sudo systemctl disable dhcpcd.service`\
-`$ sudo systemctl disable networking.service`\
-`$ sudo systemctl disable ntp.service`\
-`$ sudo systemctl disable dphys-swapfile.service`\
-`$ sudo systemctl disable keyboard-setup.service`\
-`$ sudo systemctl disable apt-daily.service`\
-`$ sudo systemctl disable wifi-country.service`\
-`$ sudo systemctl disable hciuart.service`\
-`$ sudo systemctl disable raspi-config.service`\
-`$ sudo systemctl disable avahi-daemon.service`\
-`$ sudo systemctl disable triggerhappy.service`
+```
+sudo systemctl disable dhcpcd.service
+```
+```
+sudo systemctl disable networking.service
+```
+```
+sudo systemctl disable ntp.service
+```
+```
+sudo systemctl disable dphys-swapfile.service
+```
+```
+sudo systemctl disable keyboard-setup.service
+```
+```
+sudo systemctl disable apt-daily.service
+```
+```
+sudo systemctl disable wifi-country.service
+```
+```
+sudo systemctl disable hciuart.service
+```
+```
+sudo systemctl disable raspi-config.service
+```
+```
+sudo systemctl disable avahi-daemon.service
+```
+```
+sudo systemctl disable triggerhappy.service
+```
 
-`$ sudo reboot`
+```
+sudo reboot
+```
 
 [^2]: [Pi Fast Boot](https://singleboardbytes.com/637/how-to-fast-boot-raspberry-pi.htm) 
 
 ## Github SSH [^3]
-`$ ssh-keygen -t ed25519 -C "cwcontur@uncg.edu"`\
-`$ eval "$(ssh-agent -s)"`\
-`$ ssh-add ~/.ssh/id_ed25519`\
-`$ cat ~/.ssh/id_ed25519.pub`
+```
+ssh-keygen -t ed25519 -C "cwcontur@uncg.edu"
+```
+```
+eval "$(ssh-agent -s)"
+```
+```
+ssh-add ~/.ssh/id_ed25519
+```
+```
+cat ~/.ssh/id_ed25519.pub
+```
 - Then select and copy the contents of the id_ed25519.pub file
 displayed in the terminal to your clipboard
 - Go here to add key -> https://github.com/settings/keys
@@ -74,8 +126,12 @@ displayed in the terminal to your clipboard
 
 [^6]: [MCP9808](https://github.com/fivdi/mcp9808-temperature-sensor)
 
-`$ git clone git@github.com:thisdavej/ds18b20-raspi.git`\
-`$ npm install -g ds18b20-raspi`
+```
+git clone git@github.com:thisdavej/ds18b20-raspi.git
+```
+```
+npm install -g ds18b20-raspi
+```
 ```
 $ ds18b20 [deviceId] [options]
 
@@ -104,10 +160,33 @@ Examples
   $ ds18b20 --list
 ```
 
+#### MCP9808[^7][^8]
+
+```
+sudo apt-get install build-essential python-dev python-pip python-smbus git
+```
+
+```
+sudo pip install RPi.GPIO
+```
+```
+git clone git@github.com:cwcontur/Adafruit_Python_MCP9808.git
+```
+```
+cd Adafruit_Python_MCP9808
+```
+```
+sudo python setup.py install
+```
+
+[^7]: [MCP9808 Wiring](https://learn.adafruit.com/mcp9808-temperature-sensor-python-library/hardware)
+[^8]: [MCP9808 Software](https://learn.adafruit.com/mcp9808-temperature-sensor-python-library/software)
 [^4]: [DS18B20](https://github.com/thisdavej/ds18b20-raspi) 
 
 ## OctoPrint UI [^5]
-`$ bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/main/scripts/install.sh)`\
+```
+bash <(wget -qO- https://github.com/UnchartedBull/OctoDash/raw/main/scripts/install.sh)
+```
 
 **[Enable needed plugins + CORS]**
 
