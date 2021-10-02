@@ -133,7 +133,7 @@ displayed in the terminal to your clipboard
 git clone git@github.com:thisdavej/ds18b20-raspi.git
 ```
 ```
-npm install -g ds18b20-raspi
+npm install --save ds18b20-raspi
 ```
 ```
 $ ds18b20 [deviceId] [options]
