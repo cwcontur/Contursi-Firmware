@@ -3,7 +3,11 @@
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
 <img src="https://img.shields.io/github/v/release/cwcontur/Contursi-Marlin-Firmware?color=blue&include_prereleases"/>
 <img src="https://img.shields.io/badge/-Contursi-orange" alt="GitHub release"/>
+<img src="https://img.shields.io/github/commit-activity/m/cwcontur/Contursi-Marlin-Firmware?color=Green"/>
+<img src="https://img.shields.io/github/languages/top/cwcontur/Contursi-Marlin-Firmware?color=yellow"/>
+
 <img align="right" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
+
 
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 
