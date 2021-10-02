@@ -22,6 +22,9 @@ sudo reboot
 sudo apt-get update
 ```
 ```
+sudo apt update --allow-releaseinfo-change
+```
+```
 sudo apt full-upgrade
 ```
 ```
