@@ -1,7 +1,8 @@
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
-
+<img src="https://img.shields.io/badge/Release-v0.2.2-blue" alt="GitHub release"/>
+<img src="https://img.shields.io/badge/-Contursi-orange" alt="GitHub release"/>
 <img align="right" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
 
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
