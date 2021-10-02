@@ -45,9 +45,9 @@ sudo nano /boot/config.txt
 - `boot_delay=0`
 
 ***Cooling Fan Needed for Overclocking!***
-- `over_voltage=6`
-- `arm_freq=2147`
-- `gpu_freq=750`
+- `over_voltage=2`
+- `arm_freq=2000`
+- `gpu_freq=700`
 
 ```
 sudo reboot
