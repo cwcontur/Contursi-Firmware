@@ -1,6 +1,11 @@
 # Pi Firmware Setup
 #### Raspberry Pi 4 Firmware + 1 Wire Temp Sensor Modules + Touchscreen UI
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
+## SSH Acces
+***Clear SSH keys to access via SSH***
+```
+ssh-keygen -R printer
+```
 ## Pi Settings
 ```
 sudo raspi-config
