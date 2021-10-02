@@ -1,7 +1,6 @@
 # Marlin 3D Printer Firmware
 
-![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
-<img src="https://img.shields.io/badge/-Contursi-blue" alt="GitHub release"/>
+<img src="https://img.shields.io/github/license/cwcontur/Contursi-Marlin-Firmware"> <img src="https://img.shields.io/badge/-Contursi-blue" alt="GitHub release"/>
 <img src="https://img.shields.io/github/v/release/cwcontur/Contursi-Marlin-Firmware?color=yellow&include_prereleases"/>
 <img src="https://img.shields.io/github/commit-activity/m/cwcontur/Contursi-Marlin-Firmware?color=Green"/>
 <img src="https://img.shields.io/github/languages/top/cwcontur/Contursi-Marlin-Firmware?color=yellow"/>
