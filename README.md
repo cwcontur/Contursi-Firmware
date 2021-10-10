@@ -60,3 +60,11 @@ The current Marlin admin team consists of:
 ## License
 
 Marlin is published under the [GPL license](/LICENSE) because we believe in open development. The GPL comes with both rights and obligations. Whether you use Marlin firmware as the driver for your open or closed-source product, you must keep Marlin open, and you must provide your compatible Marlin source code to end users upon request. The most straightforward way to comply with the Marlin license is to make a fork of Marlin on Github, perform your modifications, and direct users to your modified fork.
+
+##Bed Leveling
+
+- https://3dprinting.stackexchange.com/questions/8153/how-to-set-z-probe-boundary-limits-in-firmware-when-using-automatic-bed-leveling/8154
+- https://marlinfw.org/docs/configuration/probes.html
+- https://reprap.org/forum/read.php?415,880766
+- https://all3dp.com/2/bltouch-sensors-guide/
+- https://all3dp.com/2/octoprint-bltouch-guide/
