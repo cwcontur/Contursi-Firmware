@@ -26,11 +26,11 @@
 #define BOARD_CUSTOM_BUILD_FLAGS -DTONE_CHANNEL=4 -DTONE_TIMER=4 -DTIMER_TONE=4
 
 // Onboard I2C EEPROM
-#if NO_EEPROM_SELECTED
-  #define I2C_EEPROM
-  #define MARLIN_EEPROM_SIZE 0x1000                 // 4KB
-  #undef NO_EEPROM_SELECTED
-#endif
+// #if NO_EEPROM_SELECTED
+//   #define I2C_EEPROM
+//   #define MARLIN_EEPROM_SIZE 0x1000                 // 4KB
+//   #undef NO_EEPROM_SELECTED
+// #endif
 
 #include "pins_BTT_SKR_MINI_E3_common.h"
 
