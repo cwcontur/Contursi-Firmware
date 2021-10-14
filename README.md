@@ -9,7 +9,8 @@
 <img align="right" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
 
 
-Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
+Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/). \
+Original source code can be found at [Marlin GitHub Repository](https://github.com/MarlinFirmware/Marlin).
 
 ## Marlin 2.0
 
