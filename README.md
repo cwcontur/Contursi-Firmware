@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/github/license/cwcontur/Contursi-Marlin-Firmware"> 
 <img src="https://img.shields.io/github/v/release/cwcontur/Contursi-Marlin-Firmware?color=yellow&include_prereleases"/>
 <img src="https://img.shields.io/github/commit-activity/m/cwcontur/Contursi-Marlin-Firmware?color=Green"/>
-<img src="https://img.shields.io/github/languages/top/cwcontur/Contursi-Marlin-Firmware?color=yellow"/>
+<img src="https://img.shields.io/github/languages/top/cwcontur/Contursi-Marlin-Firmware?color=purple"/>
 
 <img align="right" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
 
