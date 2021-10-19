@@ -77,3 +77,6 @@ Marlin is published under the [GPL license](/LICENSE) because we believe in open
 - [CRTouch Installation](https://www.youtube.com/watch?v=de4b6HZIpNA&ab_channel=3DPrintingCanada)
 - [Z-Probe Troubleshooting Thread](https://www.reddit.com/r/ender3/comments/izgji8/bltouch_skr_mini_e3_v20_auto_homing_not_working/)
 - [SKR Mini E3 v2 Marlin Setup Guide](https://www.reddit.com/r/3Dprinting/comments/n7or5u/marlin_20x_guide_skr_mini_e3_v20_ender_3/)
+
+## EEPROM
+- https://github.com/MarlinFirmware/Marlin/pull/22919
