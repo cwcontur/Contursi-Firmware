@@ -80,3 +80,33 @@ Marlin is published under the [GPL license](/LICENSE) because we believe in open
 
 ## EEPROM
 - https://github.com/MarlinFirmware/Marlin/pull/22919
+
+## Marlin settings to explore
+- Extra Fan Speed
+- Thermal Probe Compensation
+- Lin_Advance Settings
+- Calibration_GCODE
+- Backlash_GCODE
+- Backlash_Smoothing_MM
+- Backlash_Compensation
+- Axis_relative_Modes
+- Assisted_Tramming
+- Extruder Cooling Fans (Cooler_Auto_Fan_Pin, Extruder_Auto_Fan_Speed)
+- Hotend_Idle_Timeout
+- Autotemp_Proportional
+- PID_Fan_Scaling
+- Filament_Runout_Sensor
+- Debug_Leveling_Feature
+- UBL_Mesh_Wizard
+- Nozzle_Clean_Feature
+- Fan_Kickstart_Time
+- Fan_Min_PWM
+- Fan_Max_PWM
+- Fast PWM Fan Settings
+- Part-Cooling Fan Multiplexer
+- Homing_Backoff_Post_MM
+- TMC Homing Stepper phase
+- TMC_Adv()
+- Stepper Driver Anti-SNAFU Protection
+- Postmortem_Debugging
+- Buffer_Monitoring
