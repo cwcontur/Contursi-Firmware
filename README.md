@@ -81,7 +81,7 @@ Marlin is published under the [GPL license](/LICENSE) because we believe in open
 ## EEPROM
 - https://github.com/MarlinFirmware/Marlin/pull/22919
 
-## Marlin settings to explore
+## Marlin settings to explore :microscope:
 - Extra Fan Speed
 - Thermal Probe Compensation
 - Lin_Advance Settings
