@@ -376,9 +376,9 @@
    * 5. Enable PID_FAN_SCALING_ALTERNATIVE_DEFINITION and enter the two identified Kf-values in
    *    PID_FAN_SCALING_AT_FULL_SPEED and PID_FAN_SCALING_AT_MIN_SPEED. Enter the minimum speed in PID_FAN_SCALING_MIN_SPEED
    */
-  //#define PID_FAN_SCALING
+  #define PID_FAN_SCALING
   #if ENABLED(PID_FAN_SCALING)
-    //#define PID_FAN_SCALING_ALTERNATIVE_DEFINITION
+    #define PID_FAN_SCALING_ALTERNATIVE_DEFINITION
     #if ENABLED(PID_FAN_SCALING_ALTERNATIVE_DEFINITION)
       // The alternative definition is used for an easier configuration.
       // Just figure out Kf at fullspeed (255) and PID_FAN_SCALING_MIN_SPEED.
@@ -416,7 +416,7 @@
 #if ENABLED(AUTOTEMP)
   #define AUTOTEMP_OLDWEIGHT    0.98
   // Turn on AUTOTEMP on M104/M109 by default using proportions set here
-  //#define AUTOTEMP_PROPORTIONAL
+  #define AUTOTEMP_PROPORTIONAL
   #if ENABLED(AUTOTEMP_PROPORTIONAL)
     #define AUTOTEMP_MIN_P      0 // (°C) Added to the target temperature
     #define AUTOTEMP_MAX_P      5 // (°C) Added to the target temperature
@@ -518,7 +518,7 @@
 // When first starting the main fan, run it at full speed for the
 // given number of milliseconds.  This gets the fan spinning reliably
 // before setting a PWM value. (Does not work with software PWM for fan on Sanguinololu)
-//#define FAN_KICKSTART_TIME 100
+#define FAN_KICKSTART_TIME 100
 
 // Some coolers may require a non-zero "off" state.
 //#define FAN_OFF_PWM  1
@@ -789,7 +789,7 @@
 #define HOMING_BUMP_MM      { 0, 0, 0 }       // (mm) Backoff from endstops after first bump
 #define HOMING_BUMP_DIVISOR { 2, 2, 4 }       // Re-Bump Speed Divisor (Divides the Homing Feedrate)
 
-//#define HOMING_BACKOFF_POST_MM { 2, 2, 2 }  // (mm) Backoff from endstops after homing
+#define HOMING_BACKOFF_POST_MM { 1, 1, 1 }  // (mm) Backoff from endstops after homing
 
 #define QUICK_HOME                          // If G28 contains XY do a diagonal move first
 //#define HOME_Y_BEFORE_X                     // If G28 contains XY home Y before X
@@ -928,11 +928,11 @@
 //
 // Add the G35 command to read bed corners to help adjust screws. Requires a bed probe.
 //
-//#define ASSISTED_TRAMMING
+#define ASSISTED_TRAMMING
 #if ENABLED(ASSISTED_TRAMMING)
 
   // Define positions for probe points.
-  #define TRAMMING_POINT_XY { {  20, 20 }, { 180,  20 }, { 180, 180 }, { 20, 180 } }
+  #define TRAMMING_POINT_XY { {  20, 20 }, { -100,  20 }, { 100, -100 }, { -20, 100 } }
 
   // Define position names for probe points.
   #define TRAMMING_POINT_NAME_1 "Front-Left"
@@ -941,7 +941,7 @@
   #define TRAMMING_POINT_NAME_4 "Back-Left"
 
   #define RESTORE_LEVELING_AFTER_G35    // Enable to restore leveling setup after operation
-  //#define REPORT_TRAMMING_MM          // Report Z deviation (mm) for each point relative to the first
+  #define REPORT_TRAMMING_MM          // Report Z deviation (mm) for each point relative to the first
 
   //#define ASSISTED_TRAMMING_WIZARD    // Add a Tramming Wizard to the LCD menu
 
@@ -953,7 +953,7 @@
    *   M4: 40 = Clockwise, 41 = Counter-Clockwise
    *   M5: 50 = Clockwise, 51 = Counter-Clockwise
    */
-  #define TRAMMING_SCREW_THREAD 30
+  #define TRAMMING_SCREW_THREAD 50
 
 #endif
 
@@ -1021,22 +1021,22 @@
 // Backlash Compensation
 // Adds extra movement to axes on direction-changes to account for backlash.
 //
-//#define BACKLASH_COMPENSATION
+#define BACKLASH_COMPENSATION
 #if ENABLED(BACKLASH_COMPENSATION)
   // Define values for backlash distance and correction.
   // If BACKLASH_GCODE is enabled these values are the defaults.
   #define BACKLASH_DISTANCE_MM { 0, 0, 0 } // (mm) One value for each linear axis
-  #define BACKLASH_CORRECTION    0.0       // 0.0 = no correction; 1.0 = full correction
+  #define BACKLASH_CORRECTION    0.3       // 0.0 = no correction; 1.0 = full correction
 
   // Add steps for motor direction changes on CORE kinematics
   //#define CORE_BACKLASH
 
   // Set BACKLASH_SMOOTHING_MM to spread backlash correction over multiple segments
   // to reduce print artifacts. (Enabling this is costly in memory and computation!)
-  //#define BACKLASH_SMOOTHING_MM 3 // (mm)
+  #define BACKLASH_SMOOTHING_MM 3 // (mm)
 
   // Add runtime configuration and tuning of backlash values (M425)
-  //#define BACKLASH_GCODE
+  #define BACKLASH_GCODE
 
   #if ENABLED(BACKLASH_GCODE)
     // Measure the Z backlash when probing (G29) and set with "M425 Z"
@@ -2012,19 +2012,19 @@
     // Probe temperature calibration generates a table of values starting at PTC_SAMPLE_START
     // (e.g., 30), in steps of PTC_SAMPLE_RES (e.g., 5) with PTC_SAMPLE_COUNT (e.g., 10) samples.
 
-    //#define PTC_SAMPLE_START  30  // (°C)
-    //#define PTC_SAMPLE_RES     5  // (°C)
-    //#define PTC_SAMPLE_COUNT  10
+    #define PTC_SAMPLE_START  30  // (°C)
+    #define PTC_SAMPLE_RES     5  // (°C)
+    #define PTC_SAMPLE_COUNT  10
 
     // Bed temperature calibration builds a similar table.
 
-    //#define BTC_SAMPLE_START  60  // (°C)
-    //#define BTC_SAMPLE_RES     5  // (°C)
-    //#define BTC_SAMPLE_COUNT  10
+    #define BTC_SAMPLE_START  60  // (°C)
+    #define BTC_SAMPLE_RES     5  // (°C)
+    #define BTC_SAMPLE_COUNT  10
 
     // The temperature the probe should be at while taking measurements during bed temperature
     // calibration.
-    //#define BTC_PROBE_TEMP    30  // (°C)
+    #define BTC_PROBE_TEMP    30  // (°C)
 
     // Height above Z=0.0 to raise the nozzle. Lowering this can help the probe to heat faster.
     // Note: the Z=0.0 offset is determined by the probe offset which can be set using M851.
@@ -2237,7 +2237,7 @@
 // Therefore some clients abort after 30 seconds in a timeout.
 // Some other clients start sending commands while receiving a 'wait'.
 // This "wait" is only sent when the buffer is empty. 1 second is a good value here.
-//#define NO_TIMEOUTS 1000 // Milliseconds
+#define NO_TIMEOUTS 1000 // Milliseconds
 
 // Some clients will have this feature soon. This could make the NO_TIMEOUTS unnecessary.
 //#define ADVANCED_OK
@@ -2258,7 +2258,7 @@
  *   'M106 P<fan> T2'     : Use the set secondary speed
  *   'M106 P<fan> T1'     : Restore the previous fan speed
  */
-//#define EXTRA_FAN_SPEED
+#define EXTRA_FAN_SPEED
 
 /**
  * Firmware-based and LCD-controlled retract
@@ -2974,13 +2974,13 @@
    *
    * Values from 0..1023, -1 to disable homing phase for that axis.
    */
-   #define TMC_HOME_PHASE { 640, 640, -1 }
+   #define TMC_HOME_PHASE { 896, 896, -1 }
 
   /**
    * Beta feature!
    * Create a 50/50 square wave step pulse optimal for stepper drivers.
    */
-  #define SQUARE_WAVE_STEPPING
+  //#define SQUARE_WAVE_STEPPING
 
   /**
    * Enable M122 debugging command for TMC stepper drivers.
@@ -2999,7 +2999,7 @@
    *   stepperY.intpol(0); \
    * }
    */
-  #define TMC_ADV() {  }
+  //#define TMC_ADV() {  }
 
 #endif // HAS_TRINAMIC_CONFIG
 
