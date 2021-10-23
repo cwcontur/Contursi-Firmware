@@ -84,7 +84,7 @@ Marlin is published under the [GPL license](/LICENSE) because we believe in open
 ## Marlin settings to explore :microscope:
 - Extra Fan Speed
 - Thermal Probe Compensation
-- Lin_Advance Settings
+- Lin_Advance Settings [[Configuration]](https://marlinfw.org/docs/features/lin_advance.html)
 - Calibration_GCODE
 - Backlash_GCODE
 - Backlash_Smoothing_MM
