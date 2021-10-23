@@ -84,7 +84,7 @@ Marlin is published under the [GPL license](/LICENSE) because we believe in open
 ## Marlin settings to explore :microscope:
 - Extra Fan Speed
 - Thermal Probe Compensation
-- Lin_Advance Settings
+- Lin_Advance Settings [[Configuration]](https://marlinfw.org/docs/features/lin_advance.html)
 - Calibration_GCODE
 - Backlash_GCODE
 - Backlash_Smoothing_MM
@@ -92,10 +92,10 @@ Marlin is published under the [GPL license](/LICENSE) because we believe in open
 - Axis_relative_Modes
 - Assisted_Tramming
 - Extruder Cooling Fans (Cooler_Auto_Fan_Pin, Extruder_Auto_Fan_Speed)
-- Hotend_Idle_Timeout
+- Hotend_Idle_Timeout [**Will enable for release**]
 - Autotemp_Proportional
 - PID_Fan_Scaling
-- Filament_Runout_Sensor
+- Filament_Runout_Sensor [**Will enable/configure after more testing!**]
 - Debug_Leveling_Feature
 - UBL_Mesh_Wizard
 - Nozzle_Clean_Feature
