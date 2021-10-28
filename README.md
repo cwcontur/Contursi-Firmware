@@ -91,7 +91,6 @@ Marlin is published under the [GPL license](/LICENSE) because we believe in open
 - Backlash_Smoothing_MM
 - Backlash_Compensation
 - Axis_relative_Modes
-- Assisted_Tramming
 - Extruder Cooling Fans (Cooler_Auto_Fan_Pin, Extruder_Auto_Fan_Speed)
 - Hotend_Idle_Timeout [**Will enable for release**]
 - Autotemp_Proportional
@@ -107,7 +106,6 @@ Marlin is published under the [GPL license](/LICENSE) because we believe in open
 - Part-Cooling Fan Multiplexer
 - Homing_Backoff_Post_MM
 - TMC Homing Stepper phase
-- TMC_Adv()
 - Stepper Driver Anti-SNAFU Protection
 - Postmortem_Debugging
 - Buffer_Monitoring
