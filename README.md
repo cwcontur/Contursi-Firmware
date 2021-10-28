@@ -62,6 +62,10 @@ The current Marlin admin team consists of:
 
 Marlin is published under the [GPL license](/LICENSE) because we believe in open development. The GPL comes with both rights and obligations. Whether you use Marlin firmware as the driver for your open or closed-source product, you must keep Marlin open, and you must provide your compatible Marlin source code to end users upon request. The most straightforward way to comply with the Marlin license is to make a fork of Marlin on Github, perform your modifications, and direct users to your modified fork.
 
+## Calibration
+- https://reprap.org/wiki/Calibration
+- https://reprap.org/wiki/Configuring_Marlin_Bed_Dimensions
+
 ## Bed Leveling
 
 - https://3dprinting.stackexchange.com/questions/8153/how-to-set-z-probe-boundary-limits-in-firmware-when-using-automatic-bed-leveling/8154
@@ -77,9 +81,6 @@ Marlin is published under the [GPL license](/LICENSE) because we believe in open
 - [CRTouch Installation](https://www.youtube.com/watch?v=de4b6HZIpNA&ab_channel=3DPrintingCanada)
 - [Z-Probe Troubleshooting Thread](https://www.reddit.com/r/ender3/comments/izgji8/bltouch_skr_mini_e3_v20_auto_homing_not_working/)
 - [SKR Mini E3 v2 Marlin Setup Guide](https://www.reddit.com/r/3Dprinting/comments/n7or5u/marlin_20x_guide_skr_mini_e3_v20_ender_3/)
-
-## EEPROM
-- https://github.com/MarlinFirmware/Marlin/pull/22919
 
 ## Marlin settings to explore :microscope:
 - Extra Fan Speed
